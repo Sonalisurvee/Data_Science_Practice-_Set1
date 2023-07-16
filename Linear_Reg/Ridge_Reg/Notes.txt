@@ -1,0 +1,17 @@
+`score()` and `mean_squared_error()` (MSE) are two different functions used for evaluating the performance of machine learning models, but they serve different purposes and operate on different types of models.
+
+1. `score()`:
+   - `score()` is a method provided by scikit-learn for evaluating the performance of models in supervised learning tasks, such as classification and regression.
+   - For classification models, `score()` typically calculates the accuracy of the model, which is the proportion of correct predictions.
+   - For regression models, `score()` calculates the coefficient of determination (R-squared), which measures how well the model fits the data.
+   - The specific definition of `score()` may vary depending on the specific model implementation, so it's important to refer to the documentation of the specific model you're using.
+   - Example usage: `model.score(X_test, y_test)`
+
+2. `mean_squared_error()`:
+   - `mean_squared_error()` is a function from scikit-learn's `metrics` module used to calculate the mean squared error, which is a common evaluation metric for regression tasks.
+   - It calculates the average squared difference between the predicted values and the true values.
+   - The lower the MSE value, the better the model's performance, as it indicates smaller errors between predicted and actual values.
+   - `mean_squared_error()` can be used for any regression model, regardless of the specific algorithm or implementation.
+   - Example usage: `mean_squared_error(y_true, y_pred)`
+
+In summary, `score()` is a general method for evaluating model performance, providing different metrics depending on the specific task (classification or regression). `mean_squared_error()` is a specific function for calculating the mean squared error, a commonly used metric for evaluating regression models.
